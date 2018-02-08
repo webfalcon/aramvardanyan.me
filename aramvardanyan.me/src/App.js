@@ -1,19 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './Home';
+import About from './About';
+import { BrowserRouter, Route,Switch } from 'react-router-dom';
+import Portfolio from "./Portfolio";
+import Testimonials from "./Testimonials";
+import Offers from "./Offers";
+import Contact from "./Contact";
+
 
 class App extends Component {
+
+    shouldComponentUpdate() {
+        return false;
+    }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <BrowserRouter>
+            <div>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route path='/about' component={About} />
+                    <Route path='/portfolio' component={Portfolio} />
+                    <Route path='/testimonials' component={Testimonials} />
+                    <Route path='/offers' component={Offers} />
+                    <Route path='/contact' component={Contact} />
+                </Switch>
+            </div>
+        </BrowserRouter>
     );
   }
 }
