@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class Home extends Component {
     render() {
         return (
-            <Main thumb="./assets/thumb.jpg">
+            <Main thumb="./assets/thumb.jpg" page="home">
                 <div className="centerContent">
                     <div>
                         <h1>Aram Vardanyan</h1>
@@ -32,8 +32,8 @@ class Home extends Component {
                             <ul className="socialIcons">
                                 <li><a rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/aram-vardanyan-5b510b121/"><i className="fa fa-linkedin"/></a></li>
                                 <li><a rel="noopener noreferrer" target="_blank" href="https://facebook.com/varam97"><i className="fa fa-facebook"/></a></li>
-                                <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/webfalcon/aramvardanyan.me"><i className="fa fa-github"/></a></li>
                                 <li><a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/web_Falcon/"><i className="fa fa-instagram"/></a></li>
+                                <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/webfalcon/aramvardanyan.me"><i className="fa fa-github"/></a></li>
                             </ul>
                         </div>
                     </div>

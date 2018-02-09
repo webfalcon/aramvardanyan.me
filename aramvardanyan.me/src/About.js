@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Main from './Main';
+import { Link } from 'react-router-dom';
 
 class About extends Component {
     render() {
@@ -30,7 +31,7 @@ class About extends Component {
                                             </p>
                                         </div>
                                         <div className="col-sm-6 text-right">
-                                            <button className="btn btn-standard">WORKS I'VE DONE</button>
+                                            <Link to="/portfolio" className="btn btn-standard right">WORKS I'VE DONE</Link>
                                         </div>
                                     </div>
                                 </div>

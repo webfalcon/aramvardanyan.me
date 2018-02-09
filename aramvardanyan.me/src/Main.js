@@ -1,38 +1,55 @@
 import React, { Component } from 'react';
 import Thumb from './Thumb';
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
 class Main extends Component {
-    componentWillMount(){
+    constructor(props){
+        super(props);
+        this.state ={
+            menuopen : false
+        }
+        this.toggleMenu = this.toggleMenu.bind(this);
 
     }
-    shouldComponentUpdate() {
-        return false;
+    componentWillMount(){
+        console.log(this.props);
+    }
+    toggleMenu(){
+        this.setState({
+            menuopen: !this.state.menuopen
+        })
     }
 
     render() {
         return (
             <div className="main">
-                <div className="row">
-                    <Thumb img={this.props.thumb}/>
-                    <div className="col-sm-7 content">
-
-                        <div className="fat-nav">
-                            <div className="fat-nav__wrapper">
-                                <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about">About me</Link></li>
-                                    <li><Link to="/portfolio">Work I've Done</Link></li>
-                                    <li><Link to="/testimonials">Clients about Me</Link></li>
-                                    <li><Link to="/offers">What I can offer you</Link></li>
-                                    <li><Link to="/contact">Hire me</Link></li>
-                                </ul>
-                            </div>
+                <Thumb img={this.props.thumb}/>
+                <div className="content">
+                    <div className={this.state.menuopen ? 'menu active' : 'menu'}>
+                        <div className="menu-content">
+                            <ul>
+                                <li><NavLink className="home" to="/">Home</NavLink></li>
+                                <li><NavLink to="/about">About me</NavLink></li>
+                                <li><NavLink to="/portfolio">Work I've Done</NavLink></li>
+                                <li><NavLink to="/testimonials">Clients about Me</NavLink></li>
+                                <li><NavLink to="/offers">What I can offer you</NavLink></li>
+                                <li><NavLink to="/contact">Hire me</NavLink></li>
+                            </ul>
                         </div>
-                        {this.props.children}
+                    </div>
+                    <div className="container">
+                        <a onClick={this.toggleMenu} className={this.state.menuopen ? 'hamburger active' : 'hamburger'}>
+                            <div className="hamburger__icon"/>
+                        </a>
+                        <div className={this.state.menuopen ? 'blurContent' : ''}>
+                            {this.props.page !=='home' &&
+                                <Link className="backLink" to="/"><i className="fa fa-angle-left"/> Back to Homepage</Link>
+                            }
+                            {this.props.children}
+                        </div>
                     </div>
                 </div>
             </div>

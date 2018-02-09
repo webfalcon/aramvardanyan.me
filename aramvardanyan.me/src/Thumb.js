@@ -17,7 +17,7 @@ class Thumb extends Component {
             //background: '#000'
         };
         return (
-                <div className="col-sm-5 ">
+                <div className="thumbnail">
                     <div className="thumb" style={thumbImg}/>
                 </div>
         );
