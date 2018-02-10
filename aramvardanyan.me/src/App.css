@@ -446,10 +446,10 @@ h2 {
 }
 
 @media all and (max-width: 768px){
-  h1 {
+  h1, .pages h1 {
     font-size: 50px;
   }
-  h2 {
+  h2, .pages h2 {
     font-size: 21px;
   }
   p {
@@ -472,10 +472,10 @@ h2 {
   .centerContent {
     padding: 40px 0;
   }
-  h1 {
+  h1, .pages h1 {
     font-size: 30px;
   }
-  h2 {
+  h2, .pages h2 {
     font-size: 17px;
   }
   p {
