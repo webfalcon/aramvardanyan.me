@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/aramvardanyan.me/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -284,12 +284,12 @@
       <option name="presentableId" value="Default" />
       <updated>1518077992184</updated>
       <workItem from="1518077994504" duration="31750000" />
-      <workItem from="1518256723251" duration="584000" />
+      <workItem from="1518256723251" duration="786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32334000" />
+    <option name="totallyTimeSpent" value="32536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="23" width="1437" height="827" extended-state="0" />
@@ -545,7 +545,7 @@
     <entry file="file://$PROJECT_DIR$/aramvardanyan.me/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
