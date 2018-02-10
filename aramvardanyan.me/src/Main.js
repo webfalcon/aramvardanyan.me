@@ -25,8 +25,8 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="main">
-                <Thumb img={this.props.thumb}/>
+            <div  className="main">
+                <Thumb menu={this.state.menuopen} img={this.props.thumb}/>
                 <div className="content">
                     <div className={this.state.menuopen ? 'menu active' : 'menu'}>
                         <div className="menu-content">
@@ -46,7 +46,7 @@ class Main extends Component {
                         </a>
                         <div className={this.state.menuopen ? 'blurContent' : ''}>
                             {this.props.page !=='home' &&
-                                <Link className="backLink" to="/"><i className="fa fa-angle-left"/> Back to Homepage</Link>
+                                <Link className="backLink" to="/"><i className="fa fa-angle-left"/> Back</Link>
                             }
                             {this.props.children}
                         </div>

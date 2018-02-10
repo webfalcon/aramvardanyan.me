@@ -18,7 +18,7 @@ class Thumb extends Component {
         };
         return (
                 <div className="thumbnail">
-                    <div className="thumb" style={thumbImg}/>
+                    <div className={this.props.menu ? 'thumb blur' : 'thumb'} style={thumbImg}/>
                 </div>
         );
     }

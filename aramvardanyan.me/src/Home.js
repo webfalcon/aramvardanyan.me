@@ -14,8 +14,8 @@ class Home extends Component {
                         <Link to="/contact" className="btn btn-standard">LET'S GET STARTED</Link>
                         <div className="textContainer pt-110">
                             <p className="text-right">
-                                Your customers don’t care about cleverness. They want clarity.<br/>
-                                I'll make you a website that gets your message across.<br/>
+                                Your customers don’t care about cleverness. They want clarity.
+                                I'll make you a website that gets your message across.
                                 I'll make it on time. I'll make it on budget, but you'll be the hero.
                             </p>
                         </div>
@@ -25,10 +25,10 @@ class Home extends Component {
 
                 <div className="homeFooter">
                     <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-5">
                             <Link className="hireMe" to="/contact">HIRE ME</Link>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-7">
                             <ul className="socialIcons">
                                 <li><a rel="noopener noreferrer" target="_blank" href="https://linkedin.com/in/aram-vardanyan-5b510b121/"><i className="fa fa-linkedin"/></a></li>
                                 <li><a rel="noopener noreferrer" target="_blank" href="https://facebook.com/varam97"><i className="fa fa-facebook"/></a></li>

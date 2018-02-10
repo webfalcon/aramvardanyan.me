@@ -122,7 +122,7 @@ h2 {
 
 
 .pages {
-  margin-top:30px;
+  margin-top:51px;
 }
 .pages h1 {
   font-size: 40px;
@@ -161,20 +161,20 @@ h2 {
 .hamburger {
   display: block;
   width: 50px;
-  height: 50px;
+  height: 36px;
   position: fixed;
   right: 15px;
-  top:15px;
-  left:auto;
+  top: 15px;
+  left: auto;
   z-index: 10;
-  padding: 12px;
-  -moz-box-sizing: border-box;
+  padding: 10px 12.5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: transparent;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  background: #ffffff96;
 }
 
 .hamburger.active .hamburger__icon:after, .hamburger.active .hamburger__icon:before {
@@ -270,9 +270,11 @@ h2 {
   to{margin-top:0px;}
 }
 
-
+.menu .menu-content ul {
+  padding: 0;
+}
 .menu.active .menu-content ul {
-  margin-top: 1px;
+  margin-top: 0;
   animation:menuAnim .6s;
   transition-timing-function: ease-out;
 
@@ -301,11 +303,18 @@ h2 {
   transition: 1s;
 }
 .backLink {
-  margin-top: 27px;
+  margin-top: 20px;
   display: block;
   opacity: 0.8;
-  font-size:13px;
+  font-size: 13px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background: white;
+  padding: 4px;
 }
 .backLink:hover {
   text-decoration: none;
@@ -395,4 +404,92 @@ h2 {
 }
 .modal-backdrop.show {
   z-index: -1;
+}
+
+@media all and (max-width:992px) {
+  .thumbnail, .content {
+    width: 100%;
+    position: static;
+  }
+  .thumb {
+    background-position: top!important;
+    background-size: cover!important;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    left: 0;
+  }
+  .textContainer {
+     padding: 0 0;
+  }
+  .centerContent {
+    display: block;
+    padding: 80px 0;
+  }
+  .centerContent p.text-right {
+    position: absolute;
+    bottom: 120px;
+    width: calc(100% - 30px);
+  }
+  .thumb {
+    height: 60vh;
+  }
+  .thumb.blur {
+    filter: blur(3px);
+  }
+}
+
+@media all and (max-width: 768px){
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .menu-content li, .menu-content li a, .menu-content li a.home.active {
+    font-size:16px;
+  }
+}
+@media all and (max-width: 575px){
+  .modalClose {
+    top:4px;
+    right: 4px;
+  }
+  .modal.show, .modal-dialog {
+    margin: 0;
+  }
+}
+@media all and (max-width: 480px){
+  .centerContent {
+    padding: 40px 0;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .btn-standard {
+    height: 40px;
+    max-width: 188px;
+    font-size: 13px;
+  }
+  .centerContent {
+    height: 80vh;
+  }
+  .centerContent p.text-right {
+    bottom:75px;
+  }
 }
