@@ -21,11 +21,10 @@ class Testimonials extends Component {
                                     </p>
                                 </div>
                                 <div className="testimonial">
-                                    <h3>VAZGEN ZOHRABYAN</h3>
-                                    <span>CEO @ DPM Armenia</span>
+                                    <h3>VOSKAN MARTIROSIAN</h3>
+                                    <span>CEO @ Brage</span>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    </p>
+                                        Great support and excellent knowledge of PHP and Wordpress based websites is what you can expect from Aram Vardanyan. We get monthly premium support of 5 Wordpress and start every moth a new one. Keep on good work!                                    </p>
                                 </div>
                                 <div className="testimonial">
                                     <h3>VAZGEN ZOHRABYAN</h3>
